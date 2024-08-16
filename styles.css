@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ header nav ul{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+header nav ul li{
+    list-style: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+header nav ul li img{
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#abstract{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity .5s;
+}
+
+#abstract:hover{
+    opacity: 0.7;
+}
+
+#help:hover{
+    text-decoration: underline;
+}
+
+.buttons{
+    margin-right: 30px;
+}
+
+#submit-request, #sign-in{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#submit-request{
+    background: #191a1b;
+    color: #fff;
+    
+    border: 1px solid #fff;
+}
+
+#sign-in{
+    background: #4C5FD5;
+    color: #fff;
+    transition: background .5s, color .5s;
+}
+
+#sign-in:hover{
+    background: #fff;
+    color: #000;
+}
+
+/* MAIN */
+main{
+    position: relative;
+}
+
+#btn-help{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    background-color: #4c5fd5;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 100px;
+    padding: 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Sección 1 */
+#section-1{
+    background: #dadbf1;
+    padding: 115px;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search{
+    width: 60%;
+    background: #fff;
+    border: 1px solid #000;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#search:hover{
+    border: 1px solid #4C5FD5;
+}
+
+
+#search input{
+    outline: none;
+    width: 90%;
+    border: none;
+    font-size: 1.2em;
+}
+
+
+/* Sección 2 */
+#section-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 8%;
+}
+
+#section-2 .card{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+#section-2 img{
+    width: 100px;
+    padding: 10px;
+}
+
+#section-2 div .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 2em;
+}
+
+.info h2{
+    font-size: 1.4em;
+    color: #191a1b;
+}
+
+.info p{
+    font-size: 1.4em;
+}
+
+.info a{
+    color: #4c5fd6;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.info a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding: 30px;
+}
+
+
+footer div .flex-column, .flex-column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 5px;
+}
+
+footer div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+footer .flex-column h3{
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+footer .flex-column a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .flex-column a:hover{
+    text-decoration: underline;
+}
+
+
+footer div .flex-column .contact{
+    padding: 20px 0;
+    flex-direction: column;
+}
+
+#logo{
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.copyright{
+    flex-grow: 1;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 300px;
+    font-size: 1.2em;
+}
